@@ -2,7 +2,9 @@
   "name": "checkers-project-2024",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "cG":"npx playwright test src/test/CheckersProject_JavedElahi.spec.ts --headed --workers=1 --project=chrome --reporter=html"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

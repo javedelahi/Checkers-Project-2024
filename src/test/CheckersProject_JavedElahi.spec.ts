@@ -20,19 +20,3 @@ test('Checkers Game', async () => {
    await restartGame(page,"//*[@href='./']","Restarted") //Game restarted
    await page.waitForTimeout(3000) //wait before window close
 })
-
-/*
-
-This project uses Playwright to automate the interaction with a Checkers game. After navigating to the site - I first varified the site using the confirmSite function. Then proceeded to make five legal moves as orange using the makeAMove funtion. That incormprates
-the validation of the game rules using the if and else to make sure the game procedded according to the rule. I then took a blue piece in the fourth move. After the game was finished using five moves. Then I used the restartGame funtion - used validattioin using if and else to make sure
-the game has indeed restarted usinf the promt message that appears before the game which verified the game has restarted susccesfully.
-
-that has reusable actions such as makeAMove, restartGame and confirmSite funtions that are needed for the test case. I first Navigated to the site "https://www.gamesforthebrain.com/game/checkers/" and did manual testing
-2. Confirm that the site is up
-3. Make five legal moves as orange:
-a) Include taking a blue piece
-b) Use “Make a move” as confirmation that you can take the next step
-c) Restart the game after five moves
-d) Confirm that the restarting had been successful
-
-*/
